@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+name = ARGV[0]
+Dir.mkdir name
+
+# Create a new file and write to it  
+File.open(name + '/' + name + '.jsp', 'w') do |f2|  
+  # use "\n" for two lines of text  
+  #  f2.puts "Created by Satish\nThank God!"  
+end 
+
+File.open(name + '/.content.xml', 'w')
+File.open(name + '/dialog.xml', 'w')
